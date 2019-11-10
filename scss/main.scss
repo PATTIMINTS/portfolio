@@ -1,0 +1,441 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Monoton", cursive;
+  line-height: 1.6;
+  color: $white-c;
+}
+
+//  Home Carousel
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+
+  &.current {
+    opacity: 1;
+  }
+
+  &:first-child {
+    background: url("../img/imageB.jpg") no-repeat center center/cover;
+  }
+  &:nth-child(2) {
+    background: url("../img/imageC.jpg") no-repeat center center/cover;
+  }
+  &:nth-child(3) {
+    background: url("../img/fall.jpg") no-repeat center center/cover;
+  }
+  &:nth-child(4) {
+    background: url("../img/sign.jpg") no-repeat center center/cover;
+  }
+  &:nth-child(5) {
+    background: url("../img/trouble.jpg") no-repeat center center/cover;
+  }
+  &:nth-child(6) {
+    background: url("../img/silhouette.jpg") no-repeat center center/cover;
+  }
+  &.current .content {
+    h1 {
+      position: absolute;
+      top: 70px;
+      left: -550px;
+      opacity: 1;
+      width: 900px;
+      letter-spacing: 30px;
+      font-size: 40px;
+      transform: translateX(1000px);
+      transition: all 1s ease-in-out;
+
+      padding: 35px;
+      margin-bottom: 10px;
+    }
+    p {
+      position: absolute;
+      top: 175px;
+      right: -1200px;
+      opacity: 1;
+      width: 1200px;
+      letter-spacing: 20px;
+      font-size: 25px;
+      // background-color: rgba(255, 255, 255, 0.8);
+      transform: translateX(-85rem);
+      transition: all 1s ease-in-out;
+      padding: 35px;
+    }
+  }
+}
+
+// Home side buttons
+
+.buttons {
+  button {
+    border: 2px solid $white-c;
+    background-color: transparent;
+    color: $white-c;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+
+    &#next {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+    }
+    &#prev {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+    }
+    &:hover {
+      // background-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(246, 212, 67, 0.7);
+      color: $dark-color;
+    }
+  }
+}
+
+/* Main Nav */
+#main-nav {
+  display: flex;
+  justify-content: flex-start;
+  background: $dark-color;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      a {
+        text-decoration: none;
+        color: $white-c;
+        background: transparent;
+        line-height: 3rem;
+        text-transform: uppercase;
+        padding: 2rem 1rem;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: $hi-light;
+          padding: 1.6rem 3rem;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// Home About
+
+#part-a {
+  color: $dark-color;
+  .content {
+    display: flex;
+    justify-content: space-around;
+
+    .container {
+      text-align: center;
+      flex: 2;
+      padding-left: 15rem;
+      padding-top: 5rem;
+      position: relative;
+    }
+    .image-container {
+      flex: 2;
+      padding: 3rem;
+      height: 400px;
+      margin-left: 100px;
+
+      img {
+        height: 300px;
+        width: 300px;
+        border: 1rem $white-c solid;
+        box-shadow: 5px 10px 18px $dark-color;
+      }
+    }
+    .btn {
+      position: absolute;
+      left: 27rem;
+      bottom: 5rem;
+    }
+  }
+}
+
+// About B
+
+#about-b {
+  color: $white-c;
+  background: $dark-color;
+  .container {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    .section-title {
+      text-align: center;
+    }
+    .progress {
+      overflow: hidden;
+
+      height: 20px;
+      background: $light-c;
+      border-radius: 5px;
+      margin-bottom: 0;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $hi-light;
+      }
+    }
+  }
+}
+
+// Footer
+
+#m-footer {
+  background: $dark-color;
+  color: $white-c;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 2rem;
+
+    .social i {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      color: $white-c;
+      // line-height: 35px;
+      text-align: center;
+      padding: 0.5rem;
+      transition: all 1s;
+
+      &:hover {
+        background: $hi-light;
+        height: 40px;
+        width: 40px;
+        // line-height: 38px;
+      }
+    }
+  }
+}
+
+// Portfolio
+
+.container-port {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: space-between;
+  grid-gap: 2rem;
+  overflow: hidden;
+  margin: 7rem 7rem;
+}
+
+.box {
+  padding: 3rem;
+  border: $white-c 1rem solid;
+  box-shadow: 5px 5px 15px 5px #000000;
+  background: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  // width: 300px;
+  height: 20rem;
+  margin: 3rem;
+  cursor: pointer;
+
+  p {
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    font-size: 12px;
+  }
+  .card-text {
+    text-decoration: none;
+    color: $hi-light;
+  }
+
+  &:nth-child(1) {
+    background: url("../img/ajeet-mestry.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+    position: relative;
+  }
+  &:nth-child(2) {
+    background: url("../img/insung-yoon.jpg") no-repeat center bottom/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(3) {
+    background: url("../img/bowie.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(4) {
+    background: url("../img/jannis-brandt.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(5) {
+    background: url("../img/bruce_tang.jpg") no-repeat center bottom/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(6) {
+    background: url("../img/krish-gandhi.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(7) {
+    background: url("../img/jason-leung.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(8) {
+    background: url("../img/omid-armin.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(9) {
+    background: url("../img/imageA.jpg") no-repeat center center/cover;
+    background-size: 20rem;
+  }
+}
+
+.hidden {
+  display: block !important;
+  color: $dark-color;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 5px 5px 15px 5px #000000;
+  background: white;
+  height: 100%;
+  width: 100%;
+  padding-top: 1.5rem;
+  // padding-bottom: 2rem;
+  border-radius: 50%;
+  color: $dark-color;
+}
+
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7,
+.image-8,
+.image-9 {
+  position: relative;
+}
+
+form {
+  position: relative;
+  background: $white-c;
+  color: $dark-color;
+  max-width: 40rem;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding: 15rem;
+
+  // border: 1px $dark-color solid;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px 5px #4d4b4b;
+  h3 {
+    color: rgb(128, 128, 128);
+    padding-bottom: 3rem;
+    margin-top: -3rem;
+  }
+  input {
+    width: 17rem;
+    height: 2rem;
+    margin-left: -3rem;
+
+    margin-bottom: 2rem;
+    font-size: 18px;
+  }
+  textarea {
+    width: 17rem;
+    height: 4rem;
+    margin-left: -3rem;
+    font-size: 18px;
+  }
+
+  #btn {
+    position: absolute;
+    bottom: 10rem;
+    right: 17rem;
+    padding: 1.75rem;
+  }
+
+  div.form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+// .btn-light {
+//   padding: 2rem;
+//   color: #fff;
+//   // font-weight: bold;
+//   font-size: 1rem;
+//   background: $hi-light;
+//   border-radius: 50%;
+//   text-decoration: none;
+//   transition: all 0.5s;
+
+//   &:hover {
+//     font-size: 1.5rem;
+//     padding: 2.25rem;
+//     background: $dark-color;
+//   }
+// }
+.my-2 {
+  margin: 2rem 0;
+}
+
+.btn-light {
+  padding: 2rem;
+  color: #fff;
+  font-size: 0.75rem;
+  background: $hi-light;
+  box-shadow: 3px 3px 9px 3px #727070;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.5s;
+
+  &:hover {
+    font-size: 0.9rem;
+    padding: 2.15rem;
+    background: $dark-color;
+  }
+}
+
+@import "media";
