@@ -82,14 +82,16 @@ body {
 
 /* Main Nav */
 #main-nav {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
   background: #333;
   margin: 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 4; }
+  #main-nav img {
+    width: 70px; }
   #main-nav ul {
     display: flex;
     list-style: none; }
@@ -165,6 +167,8 @@ body {
     align-items: center;
     overflow: hidden;
     padding-top: 2rem; }
+    #m-footer .footer-container img.icon {
+      width: 50px; }
     #m-footer .footer-container .social i {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -274,9 +278,17 @@ form {
   border-radius: 50%;
   box-shadow: 5px 5px 15px 5px #4d4b4b; }
   form h3 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     color: gray;
     padding-bottom: 3rem;
     margin-top: -3rem; }
+    form h3 img.logo {
+      max-width: 40px;
+      max-height: 40px;
+      border-radius: 50%;
+      padding-left: 0px; }
   form input {
     width: 17rem;
     height: 2rem;
@@ -566,7 +578,8 @@ form {
     margin: 20rem 0 1rem 1.75rem; }
     form .section-title {
       text-align: center;
-      padding-top: 2rem; }
+      padding-top: 2rem;
+      padding-left: 6rem; }
     form .form-group {
       position: absolute;
       top: 5rem;
