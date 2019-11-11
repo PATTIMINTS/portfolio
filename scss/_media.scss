@@ -202,6 +202,14 @@
       }
     }
   }
+  div.form-group {
+    input {
+      border: 1px gray dotted;
+    }
+    textarea {
+      border: 1px gray dotted;
+    }
+  }
 }
 
 @media (max-width: 667px) {
@@ -358,21 +366,22 @@
         opacity: 1;
         text-align: center;
         // margin-top: 35rem;
-        top: 5rem;
-        left: -1050px;
-        transform: translateX(550px);
+        top: 15rem;
+        left: -60rem;
+        transform: translateX(28rem);
         transition: all 1s ease-in-out;
-        font-size: 10px;
+        font-size: 15px;
 
         letter-spacing: 10px;
       }
 
       &.current .content p {
         position: absolute;
-        top: 8rem;
-        right: -1350px;
+        width: 400px;
+        top: 25rem;
+        right: -15rem;
         opacity: 1;
-        transform: translateX(-400px);
+        transform: translateX(20rem);
         transition: all 1s ease-in-out;
         text-align: center;
         // margin-top: 32rem;
@@ -439,9 +448,11 @@
     margin: 20rem 0 1rem 1.75rem;
 
     .section-title {
+      position: absolute;
+      left: 0;
       text-align: center;
-      padding-top: 2rem;
-      padding-left: 6rem;
+      padding-top: 0;
+      padding-left: 0;
     }
     .form-group {
       position: absolute;
@@ -451,11 +462,15 @@
       margin-left: 0;
       align-items: center;
       padding-bottom: 2rem;
+
       input {
         border: 1px dotted gray;
+        margin-bottom: 0.5rem;
+        width: 300px;
       }
       textarea {
         border: 1px dotted gray;
+        width: 300px;
       }
       div.my-2 {
         position: relative;
