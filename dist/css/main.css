@@ -519,7 +519,10 @@ form {
   div.form-group {
     position: absolute;
     left: 5rem;
-    top: 6rem; }
+    top: 6rem;
+    margin-left: 2rem; }
+    div.form-group input {
+      margin-bottom: 0.5rem; }
   button#btn.btn.btn-light {
     position: absolute;
     bottom: 2rem;
@@ -666,6 +669,31 @@ form {
     grid-template-columns: 3fr 0; }
     #main-nav ul li {
       padding-left: 0; }
+  .slider .slide.current {
+    opacity: 1;
+    background-size: 425px;
+    background-position: left; }
+  .slider .slide.current .content h1 {
+    position: absolute;
+    opacity: 1;
+    text-align: center;
+    top: 15rem;
+    left: -60rem;
+    transform: translateX(28rem);
+    transition: all 1s ease-in-out;
+    font-size: 15px;
+    letter-spacing: 10px; }
+  .slider .slide.current .content p {
+    position: absolute;
+    width: 400px;
+    top: 26rem;
+    right: -15rem;
+    opacity: 1;
+    transform: translateX(18rem);
+    transition: all 1s ease-in-out;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 5px; }
   .container-port .box {
     margin: 2rem auto; }
   #part-a .content .container a.btn.btn-light {
@@ -678,16 +706,21 @@ form {
     div.contact-container form.form {
       position: relative;
       width: 350px;
-      margin: auto; }
+      margin: 0 auto 2rem auto; }
       div.contact-container form.form h3 {
         position: absolute;
-        left: 0;
-        top: 0; }
+        left: 5.5rem;
+        top: 2rem; }
       div.contact-container form.form div.form-group {
         position: absolute;
         left: 5.5rem; }
         div.contact-container form.form div.form-group input {
-          margin-bottom: 0.5rem; }
+          width: 17rem;
+          margin-bottom: 0.5rem;
+          border-radius: 5%; }
+        div.contact-container form.form div.form-group textarea {
+          width: 17rem;
+          border-radius: 5%; }
       div.contact-container form.form button#btn.btn.btn-light {
         position: absolute;
         left: 35%; } }

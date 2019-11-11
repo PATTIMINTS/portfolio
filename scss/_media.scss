@@ -285,6 +285,10 @@
     position: absolute;
     left: 5rem;
     top: 6rem;
+    margin-left: 2rem;
+    input {
+      margin-bottom: 0.5rem;
+    }
   }
   button#btn.btn.btn-light {
     position: absolute;
@@ -497,6 +501,44 @@
       }
     }
   }
+  .slider {
+    .slide {
+      &.current {
+        opacity: 1;
+        background-size: 425px;
+        background-position: left;
+      }
+
+      &.current .content h1 {
+        position: absolute;
+        opacity: 1;
+        text-align: center;
+        // margin-top: 35rem;
+        top: 15rem;
+        left: -60rem;
+        transform: translateX(28rem);
+        transition: all 1s ease-in-out;
+        font-size: 15px;
+
+        letter-spacing: 10px;
+      }
+
+      &.current .content p {
+        position: absolute;
+        width: 400px;
+        top: 26rem;
+        right: -15rem;
+        opacity: 1;
+        transform: translateX(18rem);
+        transition: all 1s ease-in-out;
+        text-align: center;
+        // margin-top: 32rem;
+        font-size: 10px;
+        // margin-right: 193%;
+        letter-spacing: 5px;
+      }
+    }
+  }
 
   .container-port {
     .box {
@@ -523,19 +565,25 @@
     form.form {
       position: relative;
       width: 350px;
-      margin: auto;
+      margin: 0 auto 2rem auto;
 
       h3 {
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 5.5rem;
+        top: 2rem;
       }
 
       div.form-group {
         position: absolute;
         left: 5.5rem;
         input {
+          width: 17rem;
           margin-bottom: 0.5rem;
+          border-radius: 5%;
+        }
+        textarea {
+          width: 17rem;
+          border-radius: 5%;
         }
       }
       button#btn.btn.btn-light {
