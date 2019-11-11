@@ -592,6 +592,9 @@ form {
         border: 1px dotted gray; }
       form .form-group textarea {
         border: 1px dotted gray; }
+      form .form-group div.my-2 {
+        position: relative;
+        left: -3rem; }
     form #btn {
       position: absolute;
       bottom: 1rem;
