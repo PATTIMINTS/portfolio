@@ -180,7 +180,6 @@
 
   // Home Image Carousel
   .slider {
-    background-color: $dark-color;
     .slide {
       &.current {
         opacity: 1;
@@ -205,11 +204,91 @@
   }
 }
 
+@media (max-width: 667px) {
+  .slider {
+    .slide {
+      &.current {
+        opacity: 1;
+        background-size: 675px;
+        background-position: left;
+
+        .content {
+          h1 {
+            margin-top: 2rem;
+            opacity: 1;
+            font-size: 1rem;
+            transform: translateX(0rem);
+            transition: all 1s ease-in-out;
+          }
+
+          p {
+            margin-top: 3.5rem;
+            opacity: 1;
+            font-size: 1rem;
+            transform: translateX(-2rem);
+            transition: all 1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+
+  div.container-port {
+    .box {
+      width: 300px;
+      height: 300px;
+
+      margin: 1rem auto;
+      div.hidden {
+        p {
+          padding-right: 3.5rem;
+        }
+      }
+    }
+  }
+  #part-a {
+    .container {
+      a.btn.btn-light {
+        position: absolute;
+        left: 40%;
+      }
+    }
+  }
+
+  div .box {
+    width: 200px;
+    height: 200px;
+  }
+  form.form {
+    margin-top: 9rem;
+    height: 400px;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 50%;
+    h3.section-title {
+      padding-bottom: 0;
+      margin-top: 0;
+      position: absolute;
+      left: 8rem;
+      top: 3rem;
+    }
+  }
+  div.form-group {
+    position: absolute;
+    left: 5rem;
+    top: 6rem;
+  }
+  button#btn.btn.btn-light {
+    position: absolute;
+    bottom: 2rem;
+    left: 9rem;
+  }
+}
+
 @media (max-width: 414px) {
   #main-nav {
-    display: flex;
-    width: 414px;
-
+    display: grid;
+    grid-template-columns: 3fr 0fr;
     ul {
       display: flex;
       flex-direction: column;
@@ -396,15 +475,58 @@
     width: 375px;
     padding: 0;
     margin: 0;
-  }
-  #part-a {
-    .content .image-container {
-      margin-left: auto;
+    grid-template-columns: 3fr 0;
+    ul {
+      li {
+        padding-left: 0;
+      }
     }
   }
-  form {
-    &.form {
-      margin-left: 0;
+
+  .container-port {
+    .box {
+      margin: 2rem auto;
+    }
+  }
+  #part-a {
+    .content {
+      .container {
+        a.btn.btn-light {
+          position: absolute;
+          left: 33%;
+        }
+      }
+      .image-container {
+        margin-left: auto;
+      }
+    }
+  }
+
+  div.contact-container {
+    margin-top: 20rem;
+
+    form.form {
+      position: relative;
+      width: 350px;
+      margin: auto;
+
+      h3 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      div.form-group {
+        position: absolute;
+        left: 5.5rem;
+        input {
+          margin-bottom: 0.5rem;
+        }
+      }
+      button#btn.btn.btn-light {
+        position: absolute;
+        left: 35%;
+      }
     }
   }
 }
