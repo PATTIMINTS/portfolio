@@ -523,11 +523,11 @@ form {
     margin-left: 2rem; }
     div.form-group input {
       margin-bottom: 0.5rem; }
-  button#btn.btn.btn-light {
-    position: absolute;
-    bottom: 2rem;
-    left: 9rem;
-    z-index: 3; } }
+    div.form-group #btn {
+      position: absolute;
+      bottom: -2rem;
+      left: 2rem;
+      z-index: 3; } }
 
 @media (max-width: 414px) {
   #main-nav {
@@ -656,11 +656,11 @@ form {
       form .form-group div.my-2 {
         position: relative;
         left: -3rem; }
-    form button#btn.btn.btn-light {
-      position: absolute;
-      bottom: -2rem;
-      left: 3rem;
-      z-index: 3; } }
+      form .form-group #btn {
+        position: absolute;
+        bottom: -2rem;
+        left: 4rem;
+        z-index: 3; } }
 
 @media (max-width: 375px) {
   #main-nav {
@@ -726,8 +726,8 @@ form {
           border-radius: 5%; }
         div.contact-container form.form div.form-group div.my-2 {
           margin-top: 10rem; }
-      div.contact-container form.form button#btn.btn.btn-light {
-        position: absolute;
-        z-index: 3;
-        left: 15%;
-        bottom: -2rem; } }
+        div.contact-container form.form div.form-group #btn {
+          position: absolute;
+          z-index: 3;
+          left: 15%;
+          bottom: -2rem; } }

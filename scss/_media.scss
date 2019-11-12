@@ -289,13 +289,19 @@
     input {
       margin-bottom: 0.5rem;
     }
+    #btn {
+      position: absolute;
+      bottom: -2rem;
+      left: 2rem;
+      z-index: 3;
+    }
   }
-  button#btn.btn.btn-light {
-    position: absolute;
-    bottom: 2rem;
-    left: 9rem;
-    z-index: 3;
-  }
+  // button#btn.btn.btn-light {
+  //   position: absolute;
+  //   bottom: 2rem;
+  //   left: 9rem;
+  //   z-index: 3;
+  // }
 }
 
 @media (max-width: 414px) {
@@ -481,12 +487,12 @@
         position: relative;
         left: -3rem;
       }
-    }
-    button#btn.btn.btn-light {
-      position: absolute;
-      bottom: -2rem;
-      left: 3rem;
-      z-index: 3;
+      #btn {
+        position: absolute;
+        bottom: -2rem;
+        left: 4rem;
+        z-index: 3;
+      }
     }
   }
 }
@@ -592,12 +598,12 @@
         div.my-2 {
           margin-top: 10rem;
         }
-      }
-      button#btn.btn.btn-light {
-        position: absolute;
-        z-index: 3;
-        left: 15%;
-        bottom: -2rem;
+        #btn {
+          position: absolute;
+          z-index: 3;
+          left: 15%;
+          bottom: -2rem;
+        }
       }
     }
   }
