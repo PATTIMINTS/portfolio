@@ -655,7 +655,9 @@ form {
         width: 300px; }
       form .form-group div.my-2 {
         position: relative;
-        left: -3rem; } }
+        left: -3rem; }
+  .btn.btn-light {
+    background: red; } }
 
 @media (max-width: 375px) {
   #main-nav {
