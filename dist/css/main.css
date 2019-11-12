@@ -655,11 +655,7 @@ form {
         width: 300px; }
       form .form-group div.my-2 {
         position: relative;
-        left: -3rem; }
-    form .btn.btn-light {
-      position: absolute;
-      left: 9rem;
-      bottom: 2rem; } }
+        left: -3rem; } }
 
 @media (max-width: 375px) {
   #main-nav {
