@@ -721,6 +721,8 @@ form {
         div.contact-container form.form div.form-group textarea {
           width: 17rem;
           border-radius: 5%; }
+        div.contact-container form.form div.form-group div.my-2 {
+          margin-top: 10rem; }
       div.contact-container form.form button#btn.btn.btn-light {
         position: absolute;
         left: 35%; } }
