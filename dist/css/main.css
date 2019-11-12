@@ -523,6 +523,10 @@ form {
     margin-left: 2rem; }
     div.form-group input {
       margin-bottom: 0.5rem; }
+    div.form-group div.my-2 {
+      position: relative;
+      left: -1rem;
+      bottom: -10rem; }
   form button[type] {
     right: 10rem;
     bottom: 2rem; } }
