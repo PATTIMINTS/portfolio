@@ -714,6 +714,7 @@ form {
         left: 5.5rem;
         top: 2rem; }
       div.contact-container form.form div.form-group {
+        height: 200px;
         position: absolute;
         left: 5.5rem; }
         div.contact-container form.form div.form-group input {
