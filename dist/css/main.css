@@ -659,7 +659,8 @@ form {
     form #btn {
       position: absolute;
       bottom: 1rem;
-      left: 8rem; } }
+      left: 8rem;
+      z-index: 3; } }
 
 @media (max-width: 375px) {
   #main-nav {
@@ -726,6 +727,6 @@ form {
           margin-top: 10rem; }
       div.contact-container form.form button#btn.btn.btn-light {
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         left: 35%;
         bottom: 4rem; } }
