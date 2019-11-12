@@ -656,10 +656,10 @@ form {
       form .form-group div.my-2 {
         position: relative;
         left: -3rem; }
-    form button#btn {
+    form button#btn.btn.btn-light {
       position: absolute;
-      bottom: 1rem;
-      left: 8rem;
+      bottom: -2rem;
+      left: 3rem;
       z-index: 3; } }
 
 @media (max-width: 375px) {

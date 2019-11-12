@@ -482,10 +482,10 @@
         left: -3rem;
       }
     }
-    button#btn {
+    button#btn.btn.btn-light {
       position: absolute;
-      bottom: 1rem;
-      left: 8rem;
+      bottom: -2rem;
+      left: 3rem;
       z-index: 3;
     }
   }
