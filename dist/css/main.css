@@ -657,7 +657,9 @@ form {
         position: relative;
         left: -3rem; }
   .btn.btn-light {
-    background: red; } }
+    background: red;
+    left: 8rem;
+    bottom: 2rem; } }
 
 @media (max-width: 375px) {
   #main-nav {
