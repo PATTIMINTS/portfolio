@@ -592,6 +592,7 @@
       }
       button#btn.btn.btn-light {
         position: absolute;
+        z-index: 1;
         left: 35%;
         bottom: 4rem;
       }
