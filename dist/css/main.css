@@ -656,10 +656,11 @@ form {
       form .form-group div.my-2 {
         position: relative;
         left: -3rem; }
-    form .btn.btn-light {
-      position: absolute;
-      left: 35%;
-      bottom: 10%; } }
+      form .form-group .btn.btn-light {
+        position: absolute;
+        bottom: -2rem;
+        left: 4rem;
+        z-index: 3; } }
 
 @media (max-width: 375px) {
   #main-nav {
@@ -724,8 +725,4 @@ form {
           width: 17rem;
           border-radius: 5%; }
         div.contact-container form.form div.form-group div.my-2 {
-          margin-top: 10rem; }
-      div.contact-container form.form .btn.btn-light {
-        position: absolute;
-        left: 35%;
-        bottom: 10%; } }
+          margin-top: 10rem; } }
