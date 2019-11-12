@@ -658,8 +658,7 @@ form {
         left: -3rem; }
   .btn.btn-light {
     background: red;
-    z-index: 4;
-    left: 6rem; } }
+    z-index: 4; } }
 
 @media (max-width: 375px) {
   #main-nav {
