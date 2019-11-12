@@ -300,7 +300,7 @@ form {
     height: 4rem;
     margin-left: -3rem;
     font-size: 18px; }
-  form #btn {
+  form button[type] {
     position: absolute;
     bottom: 10rem;
     right: 17rem;
@@ -657,6 +657,7 @@ form {
         position: relative;
         left: -3rem; }
       form .form-group #btn {
+        padding: 20rem;
         position: absolute;
         bottom: -2rem;
         left: 4rem;
@@ -728,6 +729,4 @@ form {
           margin-top: 10rem; }
         div.contact-container form.form div.form-group #btn {
           position: absolute;
-          z-index: 3;
-          left: 15%;
-          bottom: -2rem; } }
+          left: 15%; } }
