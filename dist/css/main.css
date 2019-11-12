@@ -656,9 +656,9 @@ form {
       form .form-group div.my-2 {
         position: relative;
         left: -3rem; }
-  .btn.btn-light {
-    background: red;
-    z-index: 4; } }
+  form button[type] {
+    right: 10rem;
+    bottom: 5rem; } }
 
 @media (max-width: 375px) {
   #main-nav {
