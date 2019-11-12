@@ -523,11 +523,9 @@ form {
     margin-left: 2rem; }
     div.form-group input {
       margin-bottom: 0.5rem; }
-    div.form-group #btn {
-      position: absolute;
-      bottom: -2rem;
-      left: 2rem;
-      z-index: 3; } }
+  form button[type] {
+    right: 10rem;
+    bottom: 2rem; } }
 
 @media (max-width: 414px) {
   #main-nav {
