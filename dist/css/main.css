@@ -702,7 +702,8 @@ form {
   #part-a .content .image-container {
     margin-left: auto; }
   div.contact-container {
-    margin-top: 20rem; }
+    margin-top: 20rem;
+    margin-bottom: 10rem; }
     div.contact-container form.form {
       position: relative;
       width: 350px;
@@ -725,4 +726,5 @@ form {
           margin-top: 10rem; }
       div.contact-container form.form button#btn.btn.btn-light {
         position: absolute;
-        left: 35%; } }
+        left: 35%;
+        bottom: 4rem; } }
