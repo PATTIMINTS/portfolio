@@ -487,12 +487,11 @@
         position: relative;
         left: -3rem;
       }
-      #btn {
-        position: absolute;
-        bottom: -2rem;
-        left: 4rem;
-        z-index: 3;
-      }
+    }
+    .btn.btn-light {
+      position: absolute;
+      left: 35%;
+      bottom: 10%;
     }
   }
 }
@@ -598,10 +597,11 @@
         div.my-2 {
           margin-top: 10rem;
         }
-        #btn {
-          position: absolute;
-          left: 15%;
-        }
+      }
+      .btn.btn-light {
+        position: absolute;
+        left: 35%;
+        bottom: 10%;
       }
     }
   }
