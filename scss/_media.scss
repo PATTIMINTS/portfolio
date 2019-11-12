@@ -464,9 +464,8 @@
       top: 5rem;
       left: 6rem;
       width: 250px;
-      margin-left: 0;
+      margin: 0;
       align-items: center;
-      padding-bottom: 2rem;
 
       input {
         border: 1px dotted gray;
@@ -482,7 +481,7 @@
         left: -3rem;
       }
     }
-    #btn {
+    button#btn {
       position: absolute;
       bottom: 1rem;
       left: 8rem;

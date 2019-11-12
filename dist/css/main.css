@@ -643,9 +643,8 @@ form {
       top: 5rem;
       left: 6rem;
       width: 250px;
-      margin-left: 0;
-      align-items: center;
-      padding-bottom: 2rem; }
+      margin: 0;
+      align-items: center; }
       form .form-group input {
         border: 1px dotted gray;
         margin-bottom: 0.5rem;
@@ -656,7 +655,7 @@ form {
       form .form-group div.my-2 {
         position: relative;
         left: -3rem; }
-    form #btn {
+    form button#btn {
       position: absolute;
       bottom: 1rem;
       left: 8rem;
