@@ -1,24 +1,34 @@
 @media (max-width: 1366px) {
-  .slide {
-    &.current .content h1 {
-      opacity: 1;
-      text-align: center;
-      margin-top: 15rem;
-      transform: translateX(-5rem);
-      transition: all 2s ease-in-out;
-      font-size: 30px;
-      margin-left: 65%;
+  #part-a {
+    .content {
+      .container {
+        .btn {
+          position: absolute;
+          bottom: 3rem;
+          left: 24rem;
+        }
+      }
     }
-
-    &.current .content p {
-      opacity: 1;
-      transform: translateX(37rem);
-      transition: all 2s ease-in-out;
-      text-align: center;
-      margin-top: 15rem;
-      font-size: 25px;
-      margin-right: 135%;
-      letter-spacing: 10px;
+  }
+  .slide {
+    &.current .content {
+      h1 {
+        transform: translateX(68.75rem);
+        transition: all 0.8s ease-in-out 0.5s;
+      }
+      p {
+        // background-color: rgba(255, 255, 255, 0.8);
+        transform: translateX(-78rem);
+        transition: all 0.8s ease-in-out 0.5s;
+      }
+    }
+    .content {
+      h1 {
+        margin-top: 6rem;
+      }
+      p {
+        margin-top: 6rem;
+      }
     }
   }
 }
@@ -29,26 +39,23 @@
   #part-a {
     color: $dark-color;
     .content {
-      display: flex;
-      flex-direction: column;
-
       .container {
         position: relative;
         text-align: center;
         flex: 2;
-        padding: 5rem 10rem;
+        padding: 5rem 4rem;
 
         .btn {
           padding: 1rem;
 
           position: absolute;
-          bottom: -0.5rem;
-          left: 28rem;
+          bottom: 4rem;
+          left: 12rem;
         }
       }
       .image-container {
         flex: 2;
-        padding: 5rem 1rem;
+        padding: 3rem 4rem;
         height: 400px;
         margin: auto;
       }
@@ -57,37 +64,28 @@
   .slider {
     background-color: $dark-color;
     .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out;
-
       &.current {
-        opacity: 1;
-        background-size: 1075px;
+        background-size: 100%;
       }
-      &.current .content h1 {
-        opacity: 1;
-        text-align: center;
-        margin-top: 15rem;
-        transform: translateX(-0.25rem);
-        transition: all 2s ease-in-out;
-        font-size: 30px;
-        margin-left: 65%;
+      &.current .content {
+        h1 {
+          transform: translateX(58rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-63rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
       }
-
-      &.current .content p {
-        opacity: 1;
-        transform: translateX(18rem);
-        transition: all 2s ease-in-out;
-        text-align: center;
-        margin-top: 15rem;
-        font-size: 25px;
-        margin-right: 135%;
-        letter-spacing: 10px;
+      .content {
+        h1 {
+          margin-top: 20rem;
+        }
+        p {
+          margin-top: 20rem;
+          font-size: 1.25rem;
+        }
       }
     }
   }
@@ -142,12 +140,68 @@
   }
 }
 
+@media (max-width: 812px) {
+  #part-a {
+    .content {
+      .container {
+        padding: 4rem 4rem;
+        .btn {
+          bottom: 3rem;
+          left: 7.5rem;
+        }
+      }
+      .image-container {
+        flex: 2;
+        padding: 3rem 4rem;
+        height: 400px;
+        margin: auto;
+      }
+    }
+  }
+
+  .slider {
+    .slide {
+      &.current {
+        background-position: top;
+      }
+      &.current .content {
+        h1 {
+          transform: translateX(56rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-48rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+      }
+      .content {
+        h1 {
+          margin-top: 1rem;
+          font-size: 1.75rem;
+          letter-spacing: 1.5rem;
+        }
+        p {
+          margin-top: 3rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+    }
+  }
+
+  div.form-group {
+    input {
+      border: 1px gray dotted;
+    }
+    textarea {
+      border: 1px gray dotted;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   // Nav Bar
-
-  #main-nav {
-    border-bottom: 1px rgb(99, 98, 98) dotted;
-  }
 
   // About section
 
@@ -179,29 +233,38 @@
   }
 
   // Home Image Carousel
+
   .slider {
     .slide {
       &.current {
-        opacity: 1;
-        background-size: 900px;
-        background-position: left;
-
-        .content h1 {
-          opacity: 1;
-          font-size: 1.5rem;
-          transform: translateX(0rem);
-          transition: all 1s ease-in-out;
+        background-position: center;
+      }
+      &.current .content {
+        h1 {
+          transform: translateX(54rem);
+          transition: all 0.8s ease-in-out 0.5s;
         }
-
-        .content p {
-          opacity: 1;
-          font-size: 1rem;
-          transform: translateX(4rem);
-          transition: all 1s ease-in-out;
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-46.5rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+      }
+      .content {
+        h1 {
+          margin-top: 4rem;
+          font-size: 1.75rem;
+          letter-spacing: 1.5rem;
+        }
+        p {
+          margin-top: 7rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.5rem;
         }
       }
     }
   }
+
   div.form-group {
     input {
       border: 1px gray dotted;
@@ -216,26 +279,30 @@
   .slider {
     .slide {
       &.current {
-        opacity: 1;
-        background-size: 675px;
-        background-position: left;
-
-        .content {
-          h1 {
-            margin-top: 2rem;
-            opacity: 1;
-            font-size: 1rem;
-            transform: translateX(0rem);
-            transition: all 1s ease-in-out;
-          }
-
-          p {
-            margin-top: 3.5rem;
-            opacity: 1;
-            font-size: 1rem;
-            transform: translateX(-2rem);
-            transition: all 1s ease-in-out;
-          }
+        background-size: 100%;
+        background-position: top;
+      }
+      &.current .content {
+        h1 {
+          transform: translateX(55rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-38rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+      }
+      .content {
+        h1 {
+          font-size: 1.5rem;
+          margin-top: 2rem;
+          letter-spacing: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+          margin-top: 2rem;
+          letter-spacing: 0.5rem;
         }
       }
     }
@@ -255,10 +322,12 @@
     }
   }
   #part-a {
-    .container {
-      a.btn.btn-light {
-        position: absolute;
-        left: 40%;
+    .content {
+      .container {
+        .btn {
+          position: absolute;
+          left: 40%;
+        }
       }
     }
   }
@@ -302,6 +371,53 @@
   }
 }
 
+@media (max-width: 640px) {
+  .slider {
+    .slide {
+      &.current .content {
+        h1 {
+          transform: translateX(56rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-35rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+      }
+      .content {
+        h1 {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          letter-spacing: 1.25rem;
+        }
+        p {
+          font-size: 0.75rem;
+          margin-top: 2rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+    }
+  }
+
+  //  Portfolio
+
+  .container-port {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    grid-gap: 0.25rem;
+    overflow: hidden;
+
+    &:first-child {
+      margin-top: 10rem;
+    }
+    &:last-child {
+      margin-bottom: 10rem;
+    }
+  }
+}
+
 @media (max-width: 414px) {
   #main-nav {
     display: grid;
@@ -327,7 +443,6 @@
   // Home
 
   #part-a {
-    color: $dark-color;
     .content {
       display: flex;
       flex-direction: column;
@@ -341,7 +456,7 @@
         .btn {
           position: absolute;
           bottom: 0;
-          left: 9rem;
+          left: 8.5rem;
         }
       }
       .image-container {
@@ -354,50 +469,32 @@
   }
 
   .slider {
-    position: relative;
-
     .slide {
-      position: absolute;
-      top: 5rem;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out;
-
       &.current {
-        opacity: 1;
-        background-size: 550px;
-        background-position: left;
+        background-position: center;
       }
-
-      &.current .content h1 {
-        position: absolute;
-        opacity: 1;
-        text-align: center;
-        // margin-top: 35rem;
-        top: 15rem;
-        left: -60rem;
-        transform: translateX(28rem);
-        transition: all 1s ease-in-out;
-        font-size: 15px;
-
-        letter-spacing: 10px;
+      &.current .content {
+        h1 {
+          transform: translateX(52rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-24rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
       }
-
-      &.current .content p {
-        position: absolute;
-        width: 400px;
-        top: 25rem;
-        right: -15rem;
-        opacity: 1;
-        transform: translateX(20rem);
-        transition: all 1s ease-in-out;
-        text-align: center;
-        // margin-top: 32rem;
-        font-size: 10px;
-        // margin-right: 193%;
-        letter-spacing: 5px;
+      .content {
+        h1 {
+          margin-top: 10rem;
+          font-size: 1rem;
+          letter-spacing: 0.75rem;
+        }
+        p {
+          margin-top: 8rem;
+          font-size: 0.75rem;
+          letter-spacing: 0.25rem;
+        }
       }
     }
   }
@@ -428,24 +525,6 @@
 
     .social i {
       margin-right: 1rem;
-      border: 2px #fff solid;
-      border-radius: 50%;
-      height: 25px;
-      width: 25px;
-      color: $white-c;
-      // line-height: 35px;
-      text-align: center;
-      padding: 0.5rem;
-      transition: all 1s;
-      cursor: pointer;
-
-      &:hover {
-        background: $hi-light;
-        height: 25px;
-        width: 25px;
-
-        // line-height: 38px;
-      }
     }
   }
 
@@ -508,38 +587,30 @@
   .slider {
     .slide {
       &.current {
-        opacity: 1;
-        background-size: 425px;
-        background-position: left;
+        background-position: center;
       }
-
-      &.current .content h1 {
-        position: absolute;
-        opacity: 1;
-        text-align: center;
-        // margin-top: 35rem;
-        top: 15rem;
-        left: -60rem;
-        transform: translateX(28rem);
-        transition: all 1s ease-in-out;
-        font-size: 15px;
-
-        letter-spacing: 10px;
+      &.current .content {
+        h1 {
+          transform: translateX(51.5rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-23rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
       }
-
-      &.current .content p {
-        position: absolute;
-        width: 400px;
-        top: 26rem;
-        right: -15rem;
-        opacity: 1;
-        transform: translateX(18rem);
-        transition: all 1s ease-in-out;
-        text-align: center;
-        // margin-top: 32rem;
-        font-size: 10px;
-        // margin-right: 193%;
-        letter-spacing: 5px;
+      .content {
+        h1 {
+          margin-top: 10rem;
+          font-size: 1rem;
+          letter-spacing: 0.75rem;
+        }
+        p {
+          margin-top: 7rem;
+          font-size: 0.75rem;
+          letter-spacing: 0.25rem;
+        }
       }
     }
   }
@@ -600,5 +671,35 @@
   form button[type] {
     right: 8rem;
     bottom: 5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .slider {
+    .slide {
+      &.current .content {
+        h1 {
+          transform: translateX(51rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+        p {
+          // background-color: rgba(255, 255, 255, 0.8);
+          transform: translateX(-20.5rem);
+          transition: all 0.8s ease-in-out 0.5s;
+        }
+      }
+      .content {
+        h1 {
+          margin-top: 9rem;
+          font-size: 1rem;
+          letter-spacing: 0.75rem;
+        }
+        p {
+          margin-top: 6rem;
+          font-size: 0.5rem;
+          letter-spacing: 0.25rem;
+        }
+      }
+    }
   }
 }

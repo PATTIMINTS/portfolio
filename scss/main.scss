@@ -30,10 +30,6 @@ body {
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 
-  &.current {
-    opacity: 1;
-  }
-
   &:first-child {
     background: url("../img/imageB.jpg") no-repeat center center/cover;
   }
@@ -52,33 +48,41 @@ body {
   &:nth-child(6) {
     background: url("../img/silhouette.jpg") no-repeat center center/cover;
   }
-  &.current .content {
+
+  &.current {
+    opacity: 1;
+  }
+  .content {
     h1 {
       position: absolute;
-      top: 70px;
-      left: -550px;
-      opacity: 1;
+      top: 80px;
+      left: -825px;
       width: 900px;
       letter-spacing: 30px;
       font-size: 40px;
-      transform: translateX(1000px);
-      transition: all 1s ease-in-out;
-
       padding: 35px;
       margin-bottom: 10px;
     }
     p {
       position: absolute;
-      top: 175px;
+      top: 200px;
       right: -1200px;
-      opacity: 1;
       width: 1200px;
       letter-spacing: 20px;
       font-size: 25px;
+    }
+  }
+  &.current .content {
+    h1 {
+      opacity: 1;
+      transform: translateX(1200px);
+      transition: all 0.8s ease-in-out 0.5s;
+    }
+    p {
+      opacity: 1;
       // background-color: rgba(255, 255, 255, 0.8);
-      transform: translateX(-85rem);
-      transition: all 1s ease-in-out;
-      padding: 35px;
+      transform: translateX(-90rem);
+      transition: all 0.8s ease-in-out 0.5s;
     }
   }
 }

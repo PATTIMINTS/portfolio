@@ -22,8 +22,6 @@ body {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out; }
-  .slide.current {
-    opacity: 1; }
   .slide:first-child {
     background: url("../img/imageB.jpg") no-repeat center center/cover; }
   .slide:nth-child(2) {
@@ -36,29 +34,32 @@ body {
     background: url("../img/trouble.jpg") no-repeat center center/cover; }
   .slide:nth-child(6) {
     background: url("../img/silhouette.jpg") no-repeat center center/cover; }
-  .slide.current .content h1 {
+  .slide.current {
+    opacity: 1; }
+  .slide .content h1 {
     position: absolute;
-    top: 70px;
-    left: -550px;
-    opacity: 1;
+    top: 80px;
+    left: -825px;
     width: 900px;
     letter-spacing: 30px;
     font-size: 40px;
-    transform: translateX(1000px);
-    transition: all 1s ease-in-out;
     padding: 35px;
     margin-bottom: 10px; }
-  .slide.current .content p {
+  .slide .content p {
     position: absolute;
-    top: 175px;
+    top: 200px;
     right: -1200px;
-    opacity: 1;
     width: 1200px;
     letter-spacing: 20px;
-    font-size: 25px;
-    transform: translateX(-85rem);
-    transition: all 1s ease-in-out;
-    padding: 35px; }
+    font-size: 25px; }
+  .slide.current .content h1 {
+    opacity: 1;
+    transform: translateX(1200px);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slide.current .content p {
+    opacity: 1;
+    transform: translateX(-90rem);
+    transition: all 0.8s ease-in-out 0.5s; }
 
 .buttons button {
   border: 2px solid #fff;
@@ -327,77 +328,56 @@ form {
     background: #333; }
 
 @media (max-width: 1366px) {
+  #part-a .content .container .btn {
+    position: absolute;
+    bottom: 3rem;
+    left: 24rem; }
   .slide.current .content h1 {
-    opacity: 1;
-    text-align: center;
-    margin-top: 15rem;
-    transform: translateX(-5rem);
-    transition: all 2s ease-in-out;
-    font-size: 30px;
-    margin-left: 65%; }
+    transform: translateX(68.75rem);
+    transition: all 0.8s ease-in-out 0.5s; }
   .slide.current .content p {
-    opacity: 1;
-    transform: translateX(37rem);
-    transition: all 2s ease-in-out;
-    text-align: center;
-    margin-top: 15rem;
-    font-size: 25px;
-    margin-right: 135%;
-    letter-spacing: 10px; } }
+    transform: translateX(-78rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slide .content h1 {
+    margin-top: 6rem; }
+  .slide .content p {
+    margin-top: 6rem; } }
 
 @media (max-width: 1024px) {
   #main-nav {
     border-bottom: 1px #636262 dotted; }
   #part-a {
     color: #333; }
-    #part-a .content {
-      display: flex;
-      flex-direction: column; }
-      #part-a .content .container {
-        position: relative;
-        text-align: center;
-        flex: 2;
-        padding: 5rem 10rem; }
-        #part-a .content .container .btn {
-          padding: 1rem;
-          position: absolute;
-          bottom: -0.5rem;
-          left: 28rem; }
-      #part-a .content .image-container {
-        flex: 2;
-        padding: 5rem 1rem;
-        height: 400px;
-        margin: auto; }
+    #part-a .content .container {
+      position: relative;
+      text-align: center;
+      flex: 2;
+      padding: 5rem 4rem; }
+      #part-a .content .container .btn {
+        padding: 1rem;
+        position: absolute;
+        bottom: 4rem;
+        left: 12rem; }
+    #part-a .content .image-container {
+      flex: 2;
+      padding: 3rem 4rem;
+      height: 400px;
+      margin: auto; }
   .slider {
     background-color: #333; }
-    .slider .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out; }
-      .slider .slide.current {
-        opacity: 1;
-        background-size: 1075px; }
-      .slider .slide.current .content h1 {
-        opacity: 1;
-        text-align: center;
-        margin-top: 15rem;
-        transform: translateX(-0.25rem);
-        transition: all 2s ease-in-out;
-        font-size: 30px;
-        margin-left: 65%; }
-      .slider .slide.current .content p {
-        opacity: 1;
-        transform: translateX(18rem);
-        transition: all 2s ease-in-out;
-        text-align: center;
-        margin-top: 15rem;
-        font-size: 25px;
-        margin-right: 135%;
-        letter-spacing: 10px; }
+    .slider .slide.current {
+      background-size: 100%; }
+    .slider .slide.current .content h1 {
+      transform: translateX(58rem);
+      transition: all 0.8s ease-in-out 0.5s; }
+    .slider .slide.current .content p {
+      transform: translateX(-63rem);
+      transition: all 0.8s ease-in-out 0.5s; }
+    .slider .slide .content h1 {
+      margin-top: 20rem; }
+    .slider .slide .content p {
+      margin-top: 20rem;
+      font-size: 1.25rem; }
   .container-port {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -434,9 +414,39 @@ form {
   form.form {
     margin-top: 15rem; } }
 
+@media (max-width: 812px) {
+  #part-a .content .container {
+    padding: 4rem 4rem; }
+    #part-a .content .container .btn {
+      bottom: 3rem;
+      left: 7.5rem; }
+  #part-a .content .image-container {
+    flex: 2;
+    padding: 3rem 4rem;
+    height: 400px;
+    margin: auto; }
+  .slider .slide.current {
+    background-position: top; }
+  .slider .slide.current .content h1 {
+    transform: translateX(56rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide.current .content p {
+    transform: translateX(-48rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    letter-spacing: 1.5rem; }
+  .slider .slide .content p {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem; }
+  div.form-group input {
+    border: 1px gray dotted; }
+  div.form-group textarea {
+    border: 1px gray dotted; } }
+
 @media (max-width: 768px) {
-  #main-nav {
-    border-bottom: 1px #636262 dotted; }
   #part-a {
     color: #333; }
     #part-a .content {
@@ -457,19 +467,21 @@ form {
         left: 0rem;
         top: 0rem; }
   .slider .slide.current {
-    opacity: 1;
-    background-size: 900px;
-    background-position: left; }
-    .slider .slide.current .content h1 {
-      opacity: 1;
-      font-size: 1.5rem;
-      transform: translateX(0rem);
-      transition: all 1s ease-in-out; }
-    .slider .slide.current .content p {
-      opacity: 1;
-      font-size: 1rem;
-      transform: translateX(4rem);
-      transition: all 1s ease-in-out; }
+    background-position: center; }
+  .slider .slide.current .content h1 {
+    transform: translateX(54rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide.current .content p {
+    transform: translateX(-46.5rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    margin-top: 4rem;
+    font-size: 1.75rem;
+    letter-spacing: 1.5rem; }
+  .slider .slide .content p {
+    margin-top: 7rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem; }
   div.form-group input {
     border: 1px gray dotted; }
   div.form-group textarea {
@@ -477,28 +489,29 @@ form {
 
 @media (max-width: 667px) {
   .slider .slide.current {
-    opacity: 1;
-    background-size: 675px;
-    background-position: left; }
-    .slider .slide.current .content h1 {
-      margin-top: 2rem;
-      opacity: 1;
-      font-size: 1rem;
-      transform: translateX(0rem);
-      transition: all 1s ease-in-out; }
-    .slider .slide.current .content p {
-      margin-top: 3.5rem;
-      opacity: 1;
-      font-size: 1rem;
-      transform: translateX(-2rem);
-      transition: all 1s ease-in-out; }
+    background-size: 100%;
+    background-position: top; }
+  .slider .slide.current .content h1 {
+    transform: translateX(55rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide.current .content p {
+    transform: translateX(-38rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    letter-spacing: 1.25rem; }
+  .slider .slide .content p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5rem; }
   div.container-port .box {
     width: 300px;
     height: 300px;
     margin: 1rem auto; }
     div.container-port .box div.hidden p {
       padding-right: 3.5rem; }
-  #part-a .container a.btn.btn-light {
+  #part-a .content .container .btn {
     position: absolute;
     left: 40%; }
   div .box {
@@ -531,6 +544,32 @@ form {
     right: 10rem;
     bottom: 2rem; } }
 
+@media (max-width: 640px) {
+  .slider .slide.current .content h1 {
+    transform: translateX(56rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide.current .content p {
+    transform: translateX(-35rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    letter-spacing: 1.25rem; }
+  .slider .slide .content p {
+    font-size: 0.75rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5rem; }
+  .container-port {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
+    grid-gap: 0.25rem;
+    overflow: hidden; }
+    .container-port:first-child {
+      margin-top: 10rem; }
+    .container-port:last-child {
+      margin-bottom: 10rem; } }
+
 @media (max-width: 414px) {
   #main-nav {
     display: grid;
@@ -545,60 +584,39 @@ form {
         padding: 1rem; }
   form.form {
     margin: 20rem 0 2rem 1rem; }
-  #part-a {
-    color: #333; }
-    #part-a .content {
-      display: flex;
-      flex-direction: column; }
-      #part-a .content .container {
-        text-align: center;
-        flex: 2;
-        padding: 3rem 3rem 6rem 3rem;
-        position: relative; }
-        #part-a .content .container .btn {
-          position: absolute;
-          bottom: 0;
-          left: 9rem; }
-      #part-a .content .image-container {
-        flex: 2;
-        padding: 5rem 1rem;
-        height: 400px;
-        margin-left: 2.5rem; }
-  .slider {
-    position: relative; }
-    .slider .slide {
-      position: absolute;
-      top: 5rem;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.4s ease-in-out; }
-      .slider .slide.current {
-        opacity: 1;
-        background-size: 550px;
-        background-position: left; }
-      .slider .slide.current .content h1 {
+  #part-a .content {
+    display: flex;
+    flex-direction: column; }
+    #part-a .content .container {
+      text-align: center;
+      flex: 2;
+      padding: 3rem 3rem 6rem 3rem;
+      position: relative; }
+      #part-a .content .container .btn {
         position: absolute;
-        opacity: 1;
-        text-align: center;
-        top: 15rem;
-        left: -60rem;
-        transform: translateX(28rem);
-        transition: all 1s ease-in-out;
-        font-size: 15px;
-        letter-spacing: 10px; }
-      .slider .slide.current .content p {
-        position: absolute;
-        width: 400px;
-        top: 25rem;
-        right: -15rem;
-        opacity: 1;
-        transform: translateX(20rem);
-        transition: all 1s ease-in-out;
-        text-align: center;
-        font-size: 10px;
-        letter-spacing: 5px; }
+        bottom: 0;
+        left: 8.5rem; }
+    #part-a .content .image-container {
+      flex: 2;
+      padding: 5rem 1rem;
+      height: 400px;
+      margin-left: 2.5rem; }
+  .slider .slide.current {
+    background-position: center; }
+  .slider .slide.current .content h1 {
+    transform: translateX(52rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide.current .content p {
+    transform: translateX(-24rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    margin-top: 10rem;
+    font-size: 1rem;
+    letter-spacing: 0.75rem; }
+  .slider .slide .content p {
+    margin-top: 8rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem; }
   .container-port {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -615,20 +633,7 @@ form {
     .footer-container p {
       padding-top: 0; }
     .footer-container .social i {
-      margin-right: 1rem;
-      border: 2px #fff solid;
-      border-radius: 50%;
-      height: 25px;
-      width: 25px;
-      color: #fff;
-      text-align: center;
-      padding: 0.5rem;
-      transition: all 1s;
-      cursor: pointer; }
-      .footer-container .social i:hover {
-        background: #ffbc00;
-        height: 25px;
-        width: 25px; }
+      margin-right: 1rem; }
   form {
     position: relative;
     width: 375px;
@@ -671,30 +676,21 @@ form {
     #main-nav ul li {
       padding-left: 0; }
   .slider .slide.current {
-    opacity: 1;
-    background-size: 425px;
-    background-position: left; }
+    background-position: center; }
   .slider .slide.current .content h1 {
-    position: absolute;
-    opacity: 1;
-    text-align: center;
-    top: 15rem;
-    left: -60rem;
-    transform: translateX(28rem);
-    transition: all 1s ease-in-out;
-    font-size: 15px;
-    letter-spacing: 10px; }
+    transform: translateX(51.5rem);
+    transition: all 0.8s ease-in-out 0.5s; }
   .slider .slide.current .content p {
-    position: absolute;
-    width: 400px;
-    top: 26rem;
-    right: -15rem;
-    opacity: 1;
-    transform: translateX(18rem);
-    transition: all 1s ease-in-out;
-    text-align: center;
-    font-size: 10px;
-    letter-spacing: 5px; }
+    transform: translateX(-23rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    margin-top: 10rem;
+    font-size: 1rem;
+    letter-spacing: 0.75rem; }
+  .slider .slide .content p {
+    margin-top: 7rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem; }
   .container-port .box {
     margin: 2rem auto; }
   #part-a .content .container a.btn.btn-light {
@@ -729,3 +725,19 @@ form {
   form button[type] {
     right: 8rem;
     bottom: 5rem; } }
+
+@media (max-width: 360px) {
+  .slider .slide.current .content h1 {
+    transform: translateX(51rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide.current .content p {
+    transform: translateX(-20.5rem);
+    transition: all 0.8s ease-in-out 0.5s; }
+  .slider .slide .content h1 {
+    margin-top: 9rem;
+    font-size: 1rem;
+    letter-spacing: 0.75rem; }
+  .slider .slide .content p {
+    margin-top: 6rem;
+    font-size: 0.5rem;
+    letter-spacing: 0.25rem; } }
