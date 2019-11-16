@@ -83,6 +83,7 @@ body {
 
 /* Main Nav */
 #main-nav {
+  position: relative;
   display: grid;
   grid-template-columns: 8fr 1fr;
   background: #333;
@@ -92,7 +93,19 @@ body {
   width: 100%;
   z-index: 4; }
   #main-nav img {
-    width: 70px; }
+    position: absolute;
+    width: 70px;
+    animation: logo 3s infinite; }
+
+@keyframes logo {
+  from {
+    top: 0;
+    left: 70%;
+    transform: rotate(0deg); }
+  to {
+    top: 0;
+    left: 87%;
+    transform: rotate(360deg); } }
   #main-nav ul {
     display: flex;
     list-style: none; }
