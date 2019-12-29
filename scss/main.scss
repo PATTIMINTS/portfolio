@@ -1,4 +1,4 @@
-@import "config";
+@import 'config';
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Monoton", cursive;
+  font-family: 'Monoton', cursive;
   line-height: 1.6;
   color: $white-c;
 }
@@ -27,26 +27,27 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 
   &:first-child {
-    background: url("../img/imageB.jpg") no-repeat center center/cover;
+    background: url('../img/imageB.jpg') no-repeat center center/cover;
   }
   &:nth-child(2) {
-    background: url("../img/imageC.jpg") no-repeat center center/cover;
+    background: url('../img/imageC.jpg') no-repeat center center/cover;
   }
   &:nth-child(3) {
-    background: url("../img/fall.jpg") no-repeat center center/cover;
+    background: url('../img/fall.jpg') no-repeat center center/cover;
   }
   &:nth-child(4) {
-    background: url("../img/sign.jpg") no-repeat center center/cover;
+    background: url('../img/sign.jpg') no-repeat center center/cover;
   }
   &:nth-child(5) {
-    background: url("../img/trouble.jpg") no-repeat center center/cover;
+    background: url('../img/trouble.jpg') no-repeat center center/cover;
   }
   &:nth-child(6) {
-    background: url("../img/silhouette.jpg") no-repeat center center/cover;
+    background: url('../img/silhouette.jpg') no-repeat center center/cover;
   }
 
   &.current {
@@ -55,7 +56,7 @@ body {
   .content {
     h1 {
       position: absolute;
-      top: 80px;
+      top: 20rem;
       left: -825px;
       width: 900px;
       letter-spacing: 30px;
@@ -65,7 +66,7 @@ body {
     }
     p {
       position: absolute;
-      top: 200px;
+      top: 30rem;
       right: -1200px;
       width: 1200px;
       letter-spacing: 20px;
@@ -153,21 +154,22 @@ body {
     list-style: none;
 
     li {
-      padding: 1rem 1.5rem;
+      padding: 1rem 1rem;
 
       a {
         text-decoration: none;
         color: $white-c;
         background: transparent;
-        line-height: 3rem;
+        line-height: 2rem;
         text-transform: uppercase;
-        padding: 2rem 1rem;
+        padding: 1rem 0.75rem;
         transition: all 0.5s;
 
         &:hover {
           background-color: $hi-light;
-          padding: 1.6rem 3rem;
+          padding: 0.5rem 1.25rem;
           font-size: 20px;
+          border-radius: 50px;
         }
       }
     }
@@ -204,7 +206,7 @@ body {
     }
     .btn {
       position: absolute;
-      left: 27rem;
+      left: 29rem;
       bottom: 5rem;
     }
   }
@@ -316,40 +318,40 @@ body {
   }
 
   &:nth-child(1) {
-    background: url("../img/ajeet-mestry.jpg") no-repeat center center/cover;
+    background: url('../img/ajeet-mestry.jpg') no-repeat center center/cover;
     background-size: 20rem;
     position: relative;
   }
   &:nth-child(2) {
-    background: url("../img/insung-yoon.jpg") no-repeat center bottom/cover;
+    background: url('../img/insung-yoon.jpg') no-repeat center bottom/cover;
     background-size: 20rem;
   }
   &:nth-child(3) {
-    background: url("../img/bowie.jpg") no-repeat center center/cover;
+    background: url('../img/bowie.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
   &:nth-child(4) {
-    background: url("../img/jannis-brandt.jpg") no-repeat center center/cover;
+    background: url('../img/jannis-brandt.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
   &:nth-child(5) {
-    background: url("../img/bruce_tang.jpg") no-repeat center bottom/cover;
+    background: url('../img/bruce_tang.jpg') no-repeat center bottom/cover;
     background-size: 20rem;
   }
   &:nth-child(6) {
-    background: url("../img/krish-gandhi.jpg") no-repeat center center/cover;
+    background: url('../img/krish-gandhi.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
   &:nth-child(7) {
-    background: url("../img/jason-leung.jpg") no-repeat center center/cover;
+    background: url('../img/jason-leung.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
   &:nth-child(8) {
-    background: url("../img/omid-armin.jpg") no-repeat center center/cover;
+    background: url('../img/omid-armin.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
   &:nth-child(9) {
-    background: url("../img/imageA.jpg") no-repeat center center/cover;
+    background: url('../img/imageA.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
 }
@@ -460,20 +462,20 @@ form {
 }
 
 .btn-light {
-  padding: 2rem;
+  padding: 1rem;
   color: #fff;
   font-size: 0.75rem;
   background: $hi-light;
   box-shadow: 3px 3px 9px 3px #727070;
-  border-radius: 50%;
+  border-radius: 50px;
   text-decoration: none;
   transition: all 0.5s;
 
   &:hover {
     font-size: 0.9rem;
-    padding: 2.15rem;
+    padding: 1.25rem;
     background: $dark-color;
   }
 }
 
-@import "media";
+@import 'media';

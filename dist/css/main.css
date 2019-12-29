@@ -4,7 +4,7 @@
   padding: 0; }
 
 body {
-  font-family: "Monoton", cursive;
+  font-family: 'Monoton', cursive;
   line-height: 1.6;
   color: #fff; }
 
@@ -38,7 +38,7 @@ body {
     opacity: 1; }
   .slide .content h1 {
     position: absolute;
-    top: 80px;
+    top: 20rem;
     left: -825px;
     width: 900px;
     letter-spacing: 30px;
@@ -47,7 +47,7 @@ body {
     margin-bottom: 10px; }
   .slide .content p {
     position: absolute;
-    top: 200px;
+    top: 30rem;
     right: -1200px;
     width: 1200px;
     letter-spacing: 20px;
@@ -110,19 +110,20 @@ body {
     display: flex;
     list-style: none; }
     #main-nav ul li {
-      padding: 1rem 1.5rem; }
+      padding: 1rem 1rem; }
       #main-nav ul li a {
         text-decoration: none;
         color: #fff;
         background: transparent;
-        line-height: 3rem;
+        line-height: 2rem;
         text-transform: uppercase;
-        padding: 2rem 1rem;
+        padding: 1rem 0.75rem;
         transition: all 0.5s; }
         #main-nav ul li a:hover {
           background-color: #ffbc00;
-          padding: 1.6rem 3rem;
-          font-size: 20px; }
+          padding: 0.5rem 1.25rem;
+          font-size: 20px;
+          border-radius: 50px; }
 
 #part-a {
   color: #333; }
@@ -147,7 +148,7 @@ body {
         box-shadow: 5px 10px 18px #333; }
     #part-a .content .btn {
       position: absolute;
-      left: 27rem;
+      left: 29rem;
       bottom: 5rem; }
 
 #about-b {
@@ -327,17 +328,17 @@ form {
   margin: 2rem 0; }
 
 .btn-light {
-  padding: 2rem;
+  padding: 1rem;
   color: #fff;
   font-size: 0.75rem;
   background: #ffbc00;
   box-shadow: 3px 3px 9px 3px #727070;
-  border-radius: 50%;
+  border-radius: 50px;
   text-decoration: none;
   transition: all 0.5s; }
   .btn-light:hover {
     font-size: 0.9rem;
-    padding: 2.15rem;
+    padding: 1.25rem;
     background: #333; }
 
 @media (max-width: 1366px) {
@@ -387,9 +388,9 @@ form {
       transform: translateX(-63rem);
       transition: all 0.8s ease-in-out 0.5s; }
     .slider .slide .content h1 {
-      margin-top: 20rem; }
+      margin-top: 3rem; }
     .slider .slide .content p {
-      margin-top: 20rem;
+      margin-top: 4rem;
       font-size: 1.25rem; }
   .container-port {
     display: grid;
@@ -697,11 +698,11 @@ form {
     transform: translateX(-23rem);
     transition: all 0.8s ease-in-out 0.5s; }
   .slider .slide .content h1 {
-    margin-top: 10rem;
+    margin-top: 13rem;
     font-size: 1rem;
     letter-spacing: 0.75rem; }
   .slider .slide .content p {
-    margin-top: 7rem;
+    margin-top: 9rem;
     font-size: 0.75rem;
     letter-spacing: 0.25rem; }
   .container-port .box {
