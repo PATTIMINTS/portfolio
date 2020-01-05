@@ -354,12 +354,23 @@ body {
     background: url('../img/imageA.jpg') no-repeat center center/cover;
     background-size: 20rem;
   }
+  &:nth-child(10) {
+    background: url('../img/electricA.jpg') no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(11) {
+    background: url('../img/imageA.jpg') no-repeat center center/cover;
+    background-size: 20rem;
+  }
+  &:nth-child(12) {
+    background: url('../img/imageD.jpg') no-repeat center center/cover;
+    background-size: 20rem;
+  }
 }
 
 .hidden {
   display: block !important;
   color: $dark-color;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -372,6 +383,16 @@ body {
   // padding-bottom: 2rem;
   border-radius: 50%;
   color: $dark-color;
+  animation: animate1 2s ease-in-out;
+}
+
+@keyframes animate1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .image-2,
@@ -381,7 +402,10 @@ body {
 .image-6,
 .image-7,
 .image-8,
-.image-9 {
+.image-9,
+.image-10,
+.image-11,
+.image-12 {
   position: relative;
 }
 
