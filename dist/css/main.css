@@ -478,6 +478,8 @@ form {
     margin-top: 15rem; } }
 
 @media (max-width: 812px) {
+  #header-home .container .cont {
+    display: none; }
   #part-a .content .container {
     padding: 4rem 4rem; }
     #part-a .content .container .btn {
